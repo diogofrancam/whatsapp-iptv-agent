@@ -4,25 +4,34 @@
   "description": "Agente de atendimento WhatsApp para IPTV integrado com Waseller CRM",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diogofrancam/whatsapp-iptv-agent.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "iptv",
+    "crm",
+    "waseller"
+  ],
+  "author": "Diogo França",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/diogofrancam/whatsapp-iptv-agent/issues"
   },
   "homepage": "https://github.com/diogofrancam/whatsapp-iptv-agent#readme",
   "dependencies": {
-    "axios": "^1.10.0",
-    "dotenv": "^17.2.0",
-    "express": "^5.1.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "moment": "^2.30.1",
+    "qrcode-terminal": "^0.12.0",
     "sqlite3": "^5.1.7",
-    "whatsapp-web.js": "^1.31.0"
+    "whatsapp-web.js": "^1.26.0"
   }
 }
