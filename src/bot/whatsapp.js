@@ -1,25 +1,28 @@
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
+const Database = require('../database/database');
+const Config = require('../config/config');
+const Logger = require('../utils/logger');
 
 class WhatsAppBot {
     constructor() {
+        this.client = null;
+        this.database = new Database();
+        this.responses = Config.getBotResponses();
+        this.businessInfo = Config.getBusinessInfo();
+        this.isReady = false;
+        
+        this.initializeClient();
+    }
+
+    initializeClient() {
+        const whatsappConfig = Config.getWhatsAppConfig();
+        
         this.client = new Client({
             authStrategy: new LocalAuth({
-                clientId: 'iptv-agent'
+                clientId: whatsappConfig.clientId
             }),
-            puppeteer: {
-                headless: true,
-                args: [
-                    '--no-sandbox',
-                    '--disable-setuid-sandbox',
-                    '--disable-dev-shm-usage',
-                    '--disable-accelerated-2d-canvas',
-                    '--no-first-run',
-                    '--no-zygote',
-                    '--single-process',
-                    '--disable-gpu'
-                ]
-            }
+            puppeteer: whatsappConfig.puppeteerOptions
         });
 
         this.setupEventHandlers();
@@ -28,119 +31,196 @@ class WhatsAppBot {
     setupEventHandlers() {
         // QR Code para autenticação
         this.client.on('qr', (qr) => {
+            Logger.info('QR Code gerado - Escaneie com seu WhatsApp');
             console.log('📱 Escaneie o QR Code com seu WhatsApp:');
             qrcode.generate(qr, { small: true });
         });
 
-        // Bot conectado
-        this.client.on('ready', () => {
-            console.log('✅ Bot WhatsApp conectado com sucesso!');
-            console.log('🎯 Aguardando mensagens...');
-        });
-
         // Autenticação bem-sucedida
         this.client.on('authenticated', () => {
-            console.log('🔐 Autenticação realizada com sucesso!');
+            Logger.success('Autenticação realizada com sucesso');
+        });
+
+        // Bot conectado e pronto
+        this.client.on('ready', async () => {
+            this.isReady = true;
+            const info = this.client.info;
+            Logger.success('Bot WhatsApp conectado e operacional', {
+                number: info.wid.user,
+                name: info.pushname
+            });
+            console.log('✅ Bot WhatsApp conectado com sucesso!');
+            console.log('🎯 Aguardando mensagens...');
+            console.log('📊 Sistema de banco de dados ativo');
+            console.log('⚙️ Configurações carregadas');
         });
 
         // Receber mensagens
         this.client.on('message', async (message) => {
+            if (!this.isReady) return;
+            
             try {
                 await this.handleMessage(message);
             } catch (error) {
-                console.error('❌ Erro ao processar mensagem:', error);
+                Logger.error('Erro ao processar mensagem', { error: error.message });
             }
         });
 
-        // Erros
+        // Eventos de erro e desconexão
         this.client.on('auth_failure', (msg) => {
-            console.error('❌ Falha na autenticação:', msg);
+            Logger.error('Falha na autenticação', { message: msg });
         });
 
         this.client.on('disconnected', (reason) => {
+            this.isReady = false;
+            Logger.warning('Bot desconectado', { reason });
             console.log('⚠️ Bot desconectado:', reason);
-            console.log('💡 Para reconectar, execute: npm start');
         });
 
-        // Loading
         this.client.on('loading_screen', (percent, message) => {
-            console.log(`⏳ Carregando... ${percent}% - ${message}`);
+            if (percent % 20 === 0) { // Log a cada 20%
+                Logger.debug(`Carregando WhatsApp: ${percent}%`, { message });
+            }
         });
     }
 
     async handleMessage(message) {
-        console.log('\n🔍 === NOVA MENSAGEM ===');
-        console.log('📧 De:', message.from);
-        console.log('📝 Texto:', message.body || 'undefined');
-        console.log('🤖 É minha?', message.fromMe);
-        console.log('👥 É grupo?', message.from.includes('@g.us'));
-        console.log('📱 Tipo:', message.type);
-
-        // Ignorar mensagens próprias
-        if (message.fromMe) {
-            console.log('⏭️ IGNORADO: mensagem própria');
-            return;
-        }
-
-        // Ignorar grupos por enquanto
-        if (message.from.includes('@g.us')) {
-            console.log('⏭️ IGNORADO: mensagem de grupo');
-            return;
-        }
-
-        // Ignorar mensagens sem texto
-        if (!message.body || message.body.trim() === '') {
-            console.log('⏭️ IGNORADO: mensagem sem texto (mídia, figurinha, etc.)');
-            return;
-        }
+        // Filtros básicos
+        if (message.fromMe) return;
+        if (message.from.includes('@g.us')) return;
+        if (!message.body || message.body.trim() === '') return;
 
         try {
+            // Obter informações do contato
             const contact = await message.getContact();
-            const messageText = message.body.toLowerCase();
+            const phoneNumber = message.from.replace('@c.us', '');
             const userName = contact.pushname || contact.name || 'Usuário';
+            const messageText = message.body.toLowerCase().trim();
 
-            console.log(`👤 USUÁRIO: ${userName}`);
-            console.log(`💬 MENSAGEM: "${message.body}"`);
+            // Log da mensagem recebida
+            Logger.messageReceived(phoneNumber, userName, message.body);
 
-            // Resposta automática simples
-            let responseText = '';
+            // Salvar/atualizar cliente no banco
+            await this.database.upsertCustomer(phoneNumber, userName);
 
-            if (messageText.includes('oi') || messageText.includes('olá') || messageText.includes('ola')) {
-                responseText = '🤖 Olá! Sou o assistente virtual da nossa empresa de IPTV. Como posso ajudá-lo?';
-                console.log('🎯 RESPOSTA: Saudação');
-            }
-            else if (messageText.includes('preço') || messageText.includes('valor') || messageText.includes('plano')) {
-                responseText = '💰 Nossos planos começam a partir de R$ 29,90/mês. Gostaria de conhecer todas as opções disponíveis?';
-                console.log('🎯 RESPOSTA: Preços');
-            }
-            else if (messageText.includes('teste') || messageText.includes('trial')) {
-                responseText = '🎯 Oferecemos 24h de teste grátis! Posso configurar para você agora mesmo.';
-                console.log('🎯 RESPOSTA: Teste grátis');
-            }
-            else {
-                responseText = '🤖 Recebido! Em breve um de nossos atendentes entrará em contato. Ou digite "preço" para ver nossos planos.';
-                console.log('🎯 RESPOSTA: Padrão');
-            }
+            // Processar mensagem e gerar resposta
+            const response = this.generateResponse(messageText, userName);
 
-            console.log('📤 ENVIANDO RESPOSTA...');
-            await message.reply(responseText);
-            console.log('✅ RESPOSTA ENVIADA COM SUCESSO!');
+            // Enviar resposta
+            await message.reply(response);
+            
+            // Log da resposta enviada
+            Logger.messageSent(phoneNumber, response);
+
+            // Salvar conversa no banco
+            await this.database.saveConversation(phoneNumber, userName, message.body, response);
+
+            // Log de sucesso
+            Logger.success('Conversa processada', {
+                phone: phoneNumber,
+                user: userName,
+                messageLength: message.body.length,
+                responseLength: response.length
+            });
 
         } catch (error) {
-            console.error('❌ ERRO ao processar mensagem:', error);
+            Logger.error('Erro no handleMessage', {
+                error: error.message,
+                stack: error.stack
+            });
+            
+            // Resposta de erro para o usuário
+            try {
+                await message.reply('🤖 Ops! Tive um problema técnico. Tente novamente em alguns instantes ou digite "suporte" para falar com um atendente.');
+            } catch (replyError) {
+                Logger.error('Erro ao enviar mensagem de erro', { error: replyError.message });
+            }
+        }
+    }
+
+    generateResponse(messageText, userName) {
+        const responses = this.responses;
+        
+        // Verificar saudações
+        if (this.containsKeywords(messageText, responses.greeting.keywords)) {
+            return responses.greeting.response.replace('{{userName}}', userName);
         }
 
-        console.log('=== FIM DA MENSAGEM ===\n');
+        // Verificar preços
+        if (this.containsKeywords(messageText, responses.pricing.keywords)) {
+            return responses.pricing.response;
+        }
+
+        // Verificar teste grátis
+        if (this.containsKeywords(messageText, responses.trial.keywords)) {
+            return responses.trial.response;
+        }
+
+        // Verificar suporte
+        if (this.containsKeywords(messageText, responses.support.keywords)) {
+            return responses.support.response;
+        }
+
+        // Resposta padrão
+        return responses.default.response;
+    }
+
+    containsKeywords(text, keywords) {
+        return keywords.some(keyword => text.includes(keyword.toLowerCase()));
     }
 
     async start() {
-        console.log('🚀 Iniciando Bot WhatsApp IPTV...');
-        await this.client.initialize();
+        try {
+            Logger.info('Iniciando sistema...');
+            
+            // Conectar banco de dados
+            await this.database.connect();
+            
+            // Inicializar WhatsApp
+            Logger.info('Inicializando cliente WhatsApp...');
+            await this.client.initialize();
+            
+        } catch (error) {
+            Logger.error('Erro ao iniciar bot', { error: error.message });
+            throw error;
+        }
     }
 
     async stop() {
-        await this.client.destroy();
-        console.log('🛑 Bot desconectado.');
+        try {
+            this.isReady = false;
+            
+            if (this.client) {
+                await this.client.destroy();
+                Logger.info('Cliente WhatsApp desconectado');
+            }
+            
+            if (this.database) {
+                await this.database.close();
+                Logger.info('Banco de dados desconectado');
+            }
+            
+            Logger.success('Bot encerrado com sucesso');
+            console.log('🛑 Bot desconectado.');
+            
+        } catch (error) {
+            Logger.error('Erro ao encerrar bot', { error: error.message });
+        }
+    }
+
+    // Métodos auxiliares para estatísticas
+    async getStats() {
+        try {
+            // Aqui podemos adicionar estatísticas do banco de dados
+            return {
+                status: this.isReady ? 'online' : 'offline',
+                uptime: process.uptime(),
+                memoryUsage: process.memoryUsage()
+            };
+        } catch (error) {
+            Logger.error('Erro ao obter estatísticas', { error: error.message });
+            return null;
+        }
     }
 }
 
