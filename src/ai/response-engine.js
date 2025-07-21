@@ -32,15 +32,21 @@ class ResponseEngine {
             const history = this.getConversationHistory(customerId);
             
             // 2. Detectar intenção da mensagem
-            const context = this.knowledgeBase.getContext(customerId) || {};
+            console.log('DEBUG: Iniciando detecção de intenção...');
+            const context = this.knowledgeBase.getContext ? this.knowledgeBase.getContext(customerId) : {};
+            console.log('DEBUG: Context obtido:', context);
+            
             const intent = this.knowledgeBase.detectIntent(message, context);
+            console.log('DEBUG: Intent detectado:', intent);
             
             // 3. Classificar perfil do cliente
+            console.log('DEBUG: Iniciando classificação...');
             const classification = this.knowledgeBase.classifyCustomer(
                 history.map(h => h.message), 
                 message, 
                 customerData
             );
+            console.log('DEBUG: Classification:', classification);
             
             // 4. Gerar resposta baseada na intenção e perfil
             const response = await this.generateIntelligentResponse(
@@ -52,8 +58,7 @@ class ResponseEngine {
             );
             
             // 5. Validar confiança da resposta
-            const shouldEscalate = !this.knowledgeBase.validateConfidence || 
-                                   !this.knowledgeBase.validateConfidence(response, this.confidenceThreshold);
+            const shouldEscalate = response.confidence < 0.6; // Escalar apenas se confidence muito baixa
             
             // 6. Adicionar ao histórico
             this.addToHistory(customerId, {
@@ -117,87 +122,100 @@ class ResponseEngine {
     /**
      * Gera resposta inteligente baseada em intenção e perfil
      */
+   /**
+     * Gera resposta inteligente baseada em intenção e perfil
+     */
     async generateIntelligentResponse(intent, customerProfile, originalMessage, customerId, customerData) {
         try {
             // Obter contexto atual do cliente
             const context = this.buildResponseContext(customerId, customerData, originalMessage);
             
-            // Casos especiais baseados na intenção
-            switch (intent) {
-                case 'GREETING':
-                    return this.handleGreeting(customerProfile, context);
-                    
-                case 'INTEREST_CONFIRMED':
-                    return this.handleInterestConfirmation(customerProfile, context);
-                    
-                case 'PRICING_REQUEST':
-                    return this.handlePricingRequest(customerProfile, context);
-                    
-                default:
-                    return this.handleGeneralQuestion(customerProfile, context, originalMessage);
+            // Obter resposta da base de conhecimento
+            let response = this.knowledgeBase.responses[intent];
+            
+            if (!response) {
+                // Fallback para intenções não encontradas
+                response = {
+                    text: "Não entendi bem. Pode reformular sua pergunta?",
+                    confidence: 0.3
+                };
+            } else {
+                // Processar resposta baseada no dispositivo se necessário
+                response = this.processDeviceSpecificResponse(response, originalMessage, context);
+                
+                // Personalizar resposta
+                if (response.text) {
+                    response.text = this.personalizeResponse(response.text, context);
+                }
             }
+            
+            return response;
             
         } catch (error) {
             logger.error('❌ Erro ao gerar resposta inteligente:', error);
             return {
-                text: "Não entendi bem sua mensagem. Pode reformular?",
+                text: "Desculpe, tive um problema técnico. Pode tentar novamente?",
                 confidence: 0.3
             };
         }
     }
 
     /**
-     * Manipuladores de intenções específicas
+     * Processa respostas específicas por dispositivo
      */
-    handleGreeting(customerProfile, context) {
-        const greeting = context.isReturning ? 
-            "oi #name tudo bem?\n\nsou o _Técnico_ *Pedro*\n\ncomo posso te ajudar?" :
-            "oi #name tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *Sky, Netflix, Prime vídeo, Globo play e +65.847 canais abertos e fechados*\n\n*Tudo isso apenas instalando um aplicativo com preço promocional HOJE*\n\ndigita *EU QUERO* para ativar agora";
+    processDeviceSpecificResponse(response, originalMessage, context) {
+        // Se é uma resposta de dispositivo, escolher a variação correta
+        if (typeof response === 'object' && response.samsung) {
+            const text = originalMessage.toLowerCase();
             
-        return {
-            text: this.personalizeResponse(greeting, context),
-            confidence: 0.8,
-            nextAction: 'await_interest_confirmation'
-        };
+            if (text.includes('samsung') || text.includes('lg')) {
+                return response.samsung;
+            } else if (text.includes('android') || text.includes('celular')) {
+                return response.android;
+            } else {
+                return response.default || response.samsung;
+            }
+        }
+        
+        return response;
     }
 
-    handleInterestConfirmation(customerProfile, context) {
-        const response = "onde quer instalar, tv ou celular?\n\nse for tv qual a marca?";
+    /**
+     * Personaliza resposta substituindo placeholders
+     */
+    personalizeResponse(text, context) {
+        if (!text) return '';
         
-        return {
-            text: this.personalizeResponse(response, context),
-            confidence: 0.9,
-            nextAction: 'qualify_device'
-        };
+        return text
+            .replace(/#name/g, context.customerName || 'amigo')
+            .replace(/#valor/g, context.price || '34,99')
+            .replace(/#taxa/g, context.maintenance || '6,99');
     }
 
-    handlePricingRequest(customerProfile, context) {
-        const response = customerProfile === 'NEGOCIADOR' ?
-            "Certo, quero que aproveite nosso *desconto HOJE*\n\n✅ _Plano *Mensal*_ de ~R$29,00~ por *R$19,99* (1 tela)\n\n✅ _Plano *3 meses*_ ~R$59,00~ por *R$49,99* (1 tela)\n\n*Aproveite já 😉*" :
-            "*Como funciona* essa promoção: É um de ativação, que você *paga esse valor apenas uma única vez*\n\nDepois fica uma taxa de *R$6,99* para *suporte e manutenção*\n\n#name\n\nFica *menos de 10 centavos por dia*";
-            
-        return {
-            text: this.personalizeResponse(response, context),
-            confidence: 0.8,
-            nextAction: 'await_decision'
-        };
-    }
-
-    handleGeneralQuestion(customerProfile, context, originalMessage) {
-        const responses = {
-            FIEL: "Claro #name! Como posso te ajudar?",
-            NEGOCIADOR: "Entendi #name. Me fala mais detalhes que vou ver a melhor opção pra você.",
-            CAUTELOSO: "Sem problemas #name. Vou te explicar tudo direitinho. O que você gostaria de saber?",
-            QUESTIONADOR: "Perfeito #name! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber.",
-            TECNICO: "Beleza #name! Vou resolver isso rapidinho pra você. Me fala mais detalhes."
-        };
+    /**
+     * Constrói contexto para geração de resposta
+     */
+    buildResponseContext(customerId, customerData, originalMessage) {
+        const history = this.getConversationHistory(customerId);
         
-        const fallbackResponse = responses[customerProfile] || responses.CAUTELOSO;
+        // Detectar dispositivo mencionado na mensagem
+        let device = 'default';
+        const text = originalMessage.toLowerCase();
+        if (text.includes('samsung') || text.includes('lg')) {
+            device = 'samsung';
+        } else if (text.includes('android') || text.includes('celular')) {
+            device = 'android';
+        }
         
         return {
-            text: this.personalizeResponse(fallbackResponse, context),
-            confidence: 0.5,
-            nextAction: 'await_clarification'
+            customerId: customerId,
+            customerName: customerData.name || 'amigo',
+            isNewCustomer: !customerData.isReturning && history.length === 0,
+            isReturning: customerData.isReturning || history.length > 0,
+            messageCount: history.length,
+            device: device,
+            price: '34,99',
+            maintenance: '6,99'
         };
     }
 
