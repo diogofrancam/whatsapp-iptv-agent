@@ -6,10 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:crm": "node test-complete-system.js",
-    "start:bot": "node bot-with-crm.js",
-    "crm:stats": "node -e \"const CRM = require(\"./src/crm/internal-crm\"); new CRM().getStats().then(console.log)\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

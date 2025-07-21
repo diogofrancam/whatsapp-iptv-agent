@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1753118085775ua72namkd",
+    "name": "Teste Cliente",
+    "phone": "5511999999999",
+    "email": "",
+    "source": "WhatsApp",
+    "status": "new",
+    "tags": [],
+    "createdAt": "2025-07-21T17:14:45.776Z",
+    "updatedAt": "2025-07-21T17:14:45.790Z",
+    "lastContact": "2025-07-21T17:14:45.790Z",
+    "notes": ""
+  }
+]
