@@ -1,0 +1,497 @@
+2025-07-20T14:37:04.758Z [INFO]: 🤖 IPTV Agent inicializando... {}
+2025-07-20T14:37:04.795Z [INFO]: Sistema Iniciado {"version":"1.0.0","nodeVersion":"v22.17.1","platform":"darwin","timestamp":"2025-07-20T14:37:04.795Z"}
+2025-07-20T14:37:04.979Z [INFO]: 📱 Inicializando conexão WhatsApp... {}
+2025-07-20T14:37:04.980Z [INFO]: 📚 Base de Conhecimento inicializada com 5 perfis de clientes {}
+2025-07-20T14:37:04.981Z [INFO]: 🤖 Response Engine inicializado {}
+2025-07-20T14:37:04.983Z [INFO]: 📱 WhatsApp Handler inicializando... {}
+2025-07-20T14:37:29.482Z [INFO]: 🚀 WhatsApp cliente inicializado com sucesso {}
+2025-07-20T14:37:29.483Z [INFO]: ✅ WhatsApp Handler configurado {}
+2025-07-20T14:37:29.484Z [INFO]: 🏥 Configurando monitoramento de saúde... {}
+2025-07-20T14:37:29.485Z [INFO]: ✅ Monitoramento de saúde ativo {}
+2025-07-20T14:37:29.485Z [INFO]: ✅ IPTV Agent iniciado com sucesso! {}
+2025-07-20T14:38:36.072Z [INFO]: 🔐 WhatsApp autenticado com sucesso {}
+2025-07-20T14:38:41.772Z [INFO]: ✅ WhatsApp conectado com sucesso! {"number":"5513997101469","name":"Hob Tiv","platform":"smbi"}
+2025-07-20T14:38:42.109Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-20T14:38:42.109Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-20T14:38:42.110Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-20T14:38:42.111Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-20T14:38:42.111Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-20T14:38:42.111Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-20T14:39:31.738Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521964243247@c.us"}
+2025-07-20T14:40:00.813Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558184765729@c.us"}
+2025-07-20T14:40:38.757Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511999311523@c.us"}
+2025-07-20T14:40:56.067Z [INFO]: WhatsApp incoming {"from":"5511999311523@c.us","to":"bot","message":"Não"}
+2025-07-20T14:40:56.069Z [INFO]: 📨 Mensagem recebida {"from":"5511999311523@c.us","contact":"Alexandre","message":"Não","type":"chat"}
+2025-07-20T14:40:58.097Z [INFO]: 📨 Processando mensagem {"customerId":"5511999311523@c.us","messagePreview":"Não","customerData":{"id":"5511999311523@c.us","name":"Alexandre","number":"5511999311523","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:41:00.166Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511999311523@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:41:00.167Z [INFO]: 📤 Resposta enviada {"to":"5511999311523@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:41:05.296Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511999311523@c.us","customerName":"Alexandre","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:41:09.262Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5522999830723@c.us"}
+2025-07-20T14:41:09.805Z [INFO]: WhatsApp incoming {"from":"5516992433917@c.us","to":"bot","message":"Carregou sim"}
+2025-07-20T14:41:09.806Z [INFO]: 📨 Mensagem recebida {"from":"5516992433917@c.us","contact":"Valter Fatimo Miranda","message":"Carregou sim","type":"chat"}
+2025-07-20T14:41:11.828Z [INFO]: 📨 Processando mensagem {"customerId":"5516992433917@c.us","messagePreview":"Carregou sim","customerData":{"id":"5516992433917@c.us","name":"Valter Fatimo Miranda","number":"5516992433917","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:41:13.101Z [INFO]: WhatsApp incoming {"from":"5516992433917@c.us","to":"bot","message":"Estou dando uma olhada nos conteúdos"}
+2025-07-20T14:41:13.102Z [INFO]: 📨 Mensagem recebida {"from":"5516992433917@c.us","contact":"Valter Fatimo Miranda","message":"Estou dando uma olhada nos conteúdos","type":"chat"}
+2025-07-20T14:41:15.068Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5516992433917@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:41:15.068Z [INFO]: 📤 Resposta enviada {"to":"5516992433917@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:41:15.241Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5516992433917@c.us","customerName":"Valter Fatimo Miranda","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:41:17.090Z [INFO]: 📨 Processando mensagem {"customerId":"5516992433917@c.us","messagePreview":"Estou dando uma olhada nos conteúdos","customerData":{"id":"5516992433917@c.us","name":"Valter Fatimo Miranda","number":"5516992433917","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:41:18.639Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5516992433917@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:41:18.643Z [INFO]: 📤 Resposta enviada {"to":"5516992433917@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:41:19.201Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5516992433917@c.us","customerName":"Valter Fatimo Miranda","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:43:16.393Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557388470403@c.us"}
+2025-07-20T14:43:48.781Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557191976541@c.us"}
+2025-07-20T14:44:24.732Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553897301225@c.us"}
+2025-07-20T14:44:56.576Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558695364200@c.us"}
+2025-07-20T14:45:29.964Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556194419380@c.us"}
+2025-07-20T14:46:07.384Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511941104411@c.us"}
+2025-07-20T14:46:42.367Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554891749785@c.us"}
+2025-07-20T14:47:16.664Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5514997474919@c.us"}
+2025-07-20T14:47:51.062Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554788361101@c.us"}
+2025-07-20T14:48:25.438Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5518997138675@c.us"}
+2025-07-20T14:49:36.312Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557186294435@c.us"}
+2025-07-20T14:50:54.155Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559699092960@c.us"}
+2025-07-20T14:51:19.493Z [INFO]: WhatsApp incoming {"from":"5516992433917@c.us","to":"bot","message":"Se eu assinar agora vou ter esse suporte durante com um ano"}
+2025-07-20T14:51:19.495Z [INFO]: 📨 Mensagem recebida {"from":"5516992433917@c.us","contact":"Valter Fatimo Miranda","message":"Se eu assinar agora vou ter esse suporte durante com um ano","type":"chat"}
+2025-07-20T14:51:21.601Z [INFO]: 📨 Processando mensagem {"customerId":"5516992433917@c.us","messagePreview":"Se eu assinar agora vou ter esse suporte durante c","customerData":{"id":"5516992433917@c.us","name":"Valter Fatimo Miranda","number":"5516992433917","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:51:23.245Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5516992433917@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:51:23.246Z [INFO]: 📤 Resposta enviada {"to":"5516992433917@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:51:23.527Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5516992433917@c.us","customerName":"Valter Fatimo Miranda","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:51:28.439Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555182996407@c.us"}
+2025-07-20T14:52:02.309Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511992700921@c.us"}
+2025-07-20T14:52:34.416Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559492566310@c.us"}
+2025-07-20T14:52:43.264Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553195214893@c.us"}
+2025-07-20T14:52:43.776Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553195214893@c.us"}
+2025-07-20T14:52:44.672Z [INFO]: WhatsApp incoming {"from":"553195214893@c.us","to":"bot","message":"Bom dia! Meu acesso não está abrindo"}
+2025-07-20T14:52:44.673Z [INFO]: 📨 Mensagem recebida {"from":"553195214893@c.us","contact":"Waleson","message":"Bom dia! Meu acesso não está abrindo","type":"chat"}
+2025-07-20T14:52:46.689Z [INFO]: 📨 Processando mensagem {"customerId":"553195214893@c.us","messagePreview":"Bom dia! Meu acesso não está abrindo","customerData":{"id":"553195214893@c.us","name":"Waleson","number":"553195214893","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:52:48.664Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553195214893@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:52:48.665Z [INFO]: 📤 Resposta enviada {"to":"553195214893@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:52:48.893Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"553195214893@c.us","customerName":"Waleson","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:53:05.952Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5519974158879@c.us"}
+2025-07-20T14:53:39.022Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554699361118@c.us"}
+2025-07-20T14:53:41.594Z [INFO]: WhatsApp incoming {"from":"5516992433917@c.us","to":"bot","message":"Estou perguntando porque já fiz uma assinatura de um ano deu 4 meses não foi cortado ninguém mais me"}
+2025-07-20T14:53:41.596Z [INFO]: 📨 Mensagem recebida {"from":"5516992433917@c.us","contact":"Valter Fatimo Miranda","message":"Estou perguntando porque já fiz uma assinatura de um ano deu 4 meses não foi cortado ninguém mais me","type":"chat"}
+2025-07-20T14:53:43.811Z [INFO]: 📨 Processando mensagem {"customerId":"5516992433917@c.us","messagePreview":"Estou perguntando porque já fiz uma assinatura de ","customerData":{"id":"5516992433917@c.us","name":"Valter Fatimo Miranda","number":"5516992433917","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:53:45.328Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5516992433917@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:53:45.329Z [INFO]: 📤 Resposta enviada {"to":"5516992433917@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:53:45.551Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5516992433917@c.us","customerName":"Valter Fatimo Miranda","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:54:07.107Z [INFO]: WhatsApp incoming {"from":"5511999311523@c.us","to":"bot","message":"Ola"}
+2025-07-20T14:54:07.112Z [INFO]: 📨 Mensagem recebida {"from":"5511999311523@c.us","contact":"Alexandre","message":"Ola","type":"chat"}
+2025-07-20T14:54:09.210Z [INFO]: 📨 Processando mensagem {"customerId":"5511999311523@c.us","messagePreview":"Ola","customerData":{"id":"5511999311523@c.us","name":"Alexandre","number":"5511999311523","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:54:09.872Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5516997212445@c.us"}
+2025-07-20T14:54:11.468Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511999311523@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:54:11.487Z [INFO]: 📤 Resposta enviada {"to":"5511999311523@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:54:11.705Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511999311523@c.us","customerName":"Alexandre","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:56:29.837Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558188199956@c.us"}
+2025-07-20T14:57:07.732Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556484166896@c.us"}
+2025-07-20T14:59:14.823Z [INFO]: WhatsApp incoming {"from":"553195214893@c.us","to":"bot","message":"1"}
+2025-07-20T14:59:14.829Z [INFO]: 📨 Mensagem recebida {"from":"553195214893@c.us","contact":"Waleson","message":"1","type":"chat"}
+2025-07-20T14:59:16.995Z [INFO]: 📨 Processando mensagem {"customerId":"553195214893@c.us","messagePreview":"1","customerData":{"id":"553195214893@c.us","name":"Waleson","number":"553195214893","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T14:59:18.594Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553195214893@c.us","message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:59:18.595Z [INFO]: 📤 Resposta enviada {"to":"553195214893@c.us","intent":"ERROR","profile":"UNKNOWN","confidence":0.1,"message":"Desculpe, estou com dificuldades técnicas. Vou te transferir para um atendente humano."}
+2025-07-20T14:59:18.814Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"553195214893@c.us","customerName":"Waleson","reason":"Baixa confiança na resposta","confidence":0.1,"intent":"ERROR"}
+2025-07-20T14:59:29.889Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5518998133066@c.us"}
+2025-07-20T15:00:00.220Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511993259976@c.us"}
+2025-07-20T15:00:10.270Z [INFO]: WhatsApp incoming {"from":"5516992433917@c.us","to":"bot","message":"Vou fazer o pix então ué"}
+2025-07-20T15:00:10.272Z [INFO]: 📨 Mensagem recebida {"from":"5516992433917@c.us","contact":"Valter Fatimo Miranda","message":"Vou fazer o pix então ué","type":"chat"}
+2025-07-20T15:00:12.414Z [INFO]: 📨 Processando mensagem {"customerId":"5516992433917@c.us","messagePreview":"Vou fazer o pix então ué","customerData":{"id":"5516992433917@c.us","name":"Valter Fatimo Miranda","number":"5516992433917","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-20T15:00:14.933Z [INFO]: 🛑 Recebido sinal SIGINT. Iniciando shutdown graceful... {}
+2025-07-21T07:20:31.309Z [INFO]: 🤖 IPTV Agent inicializando... {}
+2025-07-21T07:20:31.336Z [INFO]: Sistema Iniciado {"version":"1.0.0","nodeVersion":"v22.17.1","platform":"darwin","timestamp":"2025-07-21T07:20:31.336Z"}
+2025-07-21T07:20:31.621Z [INFO]: 📱 Inicializando conexão WhatsApp... {}
+2025-07-21T07:20:31.623Z [INFO]: 📚 Base de Conhecimento inicializada com 5 perfis de clientes {}
+2025-07-21T07:20:31.625Z [INFO]: 🤖 Response Engine inicializado {}
+2025-07-21T07:20:31.626Z [INFO]: 📱 WhatsApp Handler inicializando... {}
+2025-07-21T07:20:55.185Z [INFO]: 🚀 WhatsApp cliente inicializado com sucesso {}
+2025-07-21T07:20:55.186Z [INFO]: ✅ WhatsApp Handler configurado {}
+2025-07-21T07:20:55.187Z [INFO]: 🏥 Configurando monitoramento de saúde... {}
+2025-07-21T07:20:55.187Z [INFO]: ✅ Monitoramento de saúde ativo {}
+2025-07-21T07:20:55.188Z [INFO]: ✅ IPTV Agent iniciado com sucesso! {}
+2025-07-21T07:23:57.842Z [INFO]: 🔐 WhatsApp autenticado com sucesso {}
+2025-07-21T07:24:02.760Z [INFO]: ✅ WhatsApp conectado com sucesso! {"number":"5513997101469","name":"Hob Tiv","platform":"smbi"}
+2025-07-21T07:24:09.909Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556292569635@c.us"}
+2025-07-21T07:24:17.994Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558599052559@c.us"}
+2025-07-21T07:24:19.461Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"oi"}
+2025-07-21T07:24:19.482Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"oi","type":"chat"}
+2025-07-21T07:24:21.520Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"oi","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T07:24:21.525Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"GREETING","profile":"TECNICO","confidence":0.8,"shouldEscalate":true,"processingTime":5}
+2025-07-21T07:24:24.725Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553591655642@c.us"}
+2025-07-21T07:24:26.532Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"oi Diogo Franca. tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acess"}
+2025-07-21T07:24:26.534Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"GREETING","profile":"TECNICO","confidence":0.8,"message":"oi Diogo Franca. tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acess"}
+2025-07-21T07:24:27.046Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554584218699@c.us"}
+2025-07-21T07:24:27.256Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"48662703645@c.us","customerName":"Diogo Franca.","reason":"Baixa confiança na resposta","confidence":0.8,"intent":"GREETING"}
+2025-07-21T07:24:28.784Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555199576497@c.us"}
+2025-07-21T07:24:32.962Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511953099267@c.us"}
+2025-07-21T07:25:04.637Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555199188241@c.us"}
+2025-07-21T07:25:42.254Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511995935105@c.us"}
+2025-07-21T07:26:08.678Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"eu quero"}
+2025-07-21T07:26:08.679Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"eu quero","type":"chat"}
+2025-07-21T07:26:10.696Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"eu quero","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T07:26:10.700Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"INTEREST_CONFIRMED","profile":"TECNICO","confidence":0.9,"shouldEscalate":true,"processingTime":4}
+2025-07-21T07:26:12.798Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"onde quer instalar, tv ou celular?\n\nse for tv qual a marca?"}
+2025-07-21T07:26:12.798Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"INTEREST_CONFIRMED","profile":"TECNICO","confidence":0.9,"message":"onde quer instalar, tv ou celular?\n\nse for tv qual a marca?"}
+2025-07-21T07:26:13.404Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"48662703645@c.us","customerName":"Diogo Franca.","reason":"Baixa confiança na resposta","confidence":0.9,"intent":"INTEREST_CONFIRMED"}
+2025-07-21T07:26:18.891Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5517991735149@c.us"}
+2025-07-21T07:26:26.600Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"na minha tv"}
+2025-07-21T07:26:26.601Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"na minha tv","type":"chat"}
+2025-07-21T07:26:28.625Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"na minha tv","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T07:26:28.631Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"TECNICO","confidence":0.5,"shouldEscalate":true,"processingTime":6}
+2025-07-21T07:26:30.964Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"Beleza Diogo Franca.! Vou resolver isso rapidinho pra você. Me fala mais detalhes."}
+2025-07-21T07:26:30.968Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"TECNICO","confidence":0.5,"message":"Beleza Diogo Franca.! Vou resolver isso rapidinho pra você. Me fala mais detalhes."}
+2025-07-21T07:26:31.588Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"48662703645@c.us","customerName":"Diogo Franca.","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T07:26:45.918Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"quais detalhes"}
+2025-07-21T07:26:45.920Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"quais detalhes","type":"chat"}
+2025-07-21T07:26:47.936Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"quais detalhes","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T07:26:47.940Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"TECNICO","confidence":0.5,"shouldEscalate":true,"processingTime":4}
+2025-07-21T07:26:49.869Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"Beleza Diogo Franca.! Vou resolver isso rapidinho pra você. Me fala mais detalhes."}
+2025-07-21T07:26:49.870Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"TECNICO","confidence":0.5,"message":"Beleza Diogo Franca.! Vou resolver isso rapidinho pra você. Me fala mais detalhes."}
+2025-07-21T07:26:50.461Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"48662703645@c.us","customerName":"Diogo Franca.","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T07:27:07.042Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"minha tv e samsung"}
+2025-07-21T07:27:07.043Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"minha tv e samsung","type":"chat"}
+2025-07-21T07:27:09.122Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"minha tv e samsung","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T07:27:09.124Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"TECNICO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T07:27:11.694Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"Beleza Diogo Franca.! Vou resolver isso rapidinho pra você. Me fala mais detalhes."}
+2025-07-21T07:27:11.695Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"TECNICO","confidence":0.5,"message":"Beleza Diogo Franca.! Vou resolver isso rapidinho pra você. Me fala mais detalhes."}
+2025-07-21T07:27:12.176Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"48662703645@c.us","customerName":"Diogo Franca.","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T07:28:48.852Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5527999890046@c.us"}
+2025-07-21T07:29:26.553Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556296688247@c.us"}
+2025-07-21T07:30:06.144Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556192559590@c.us"}
+2025-07-21T07:30:49.550Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521984198287@c.us"}
+2025-07-21T07:31:32.248Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554999836744@c.us"}
+2025-07-21T07:32:13.181Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559285835592@c.us"}
+2025-07-21T07:32:55.110Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511984029915@c.us"}
+2025-07-21T07:33:34.214Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558799019838@c.us"}
+2025-07-21T07:34:12.163Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556183033371@c.us"}
+2025-07-21T07:34:51.069Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511986955017@c.us"}
+2025-07-21T07:38:22.174Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555184999028@c.us"}
+2025-07-21T07:38:52.412Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5519984417777@c.us"}
+2025-07-21T07:39:26.505Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555591616773@c.us"}
+2025-07-21T07:40:02.072Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521971994146@c.us"}
+2025-07-21T07:40:36.810Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558192253065@c.us"}
+2025-07-21T07:41:16.899Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553898830440@c.us"}
+2025-07-21T07:41:56.088Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511913185629@c.us"}
+2025-07-21T07:42:37.000Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559191973265@c.us"}
+2025-07-21T07:43:15.068Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559885848265@c.us"}
+2025-07-21T07:46:21.787Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5519971393412@c.us"}
+2025-07-21T07:46:58.300Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554191010605@c.us"}
+2025-07-21T07:47:37.172Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5513997591085@c.us"}
+2025-07-21T07:48:14.679Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553288378329@c.us"}
+2025-07-21T07:48:56.752Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511986020808@c.us"}
+2025-07-21T07:49:35.579Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5519991442121@c.us"}
+2025-07-21T07:50:09.851Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553188800460@c.us"}
+2025-07-21T07:50:47.175Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553499734827@c.us"}
+2025-07-21T07:51:24.356Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559180475926@c.us"}
+2025-07-21T07:51:57.287Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558799659357@c.us"}
+2025-07-21T07:54:20.711Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5524993084959@c.us"}
+2025-07-21T07:54:54.259Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554196474621@c.us"}
+2025-07-21T07:55:28.117Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554188903898@c.us"}
+2025-07-21T07:56:04.813Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511960139983@c.us"}
+2025-07-21T07:56:43.826Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556792040082@c.us"}
+2025-07-21T07:57:23.212Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553193490726@c.us"}
+2025-07-21T07:57:55.539Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559888069565@c.us"}
+2025-07-21T07:58:29.325Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553288872348@c.us"}
+2025-07-21T07:59:04.358Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558897143463@c.us"}
+2025-07-21T07:59:47.216Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555182573737@c.us"}
+2025-07-21T08:02:28.418Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511947842023@c.us"}
+2025-07-21T08:03:13.433Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5512996580404@c.us"}
+2025-07-21T08:03:49.208Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511965882560@c.us"}
+2025-07-21T08:04:24.882Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521972694499@c.us"}
+2025-07-21T08:05:00.646Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553591446271@c.us"}
+2025-07-21T08:05:42.820Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555496561991@c.us"}
+2025-07-21T08:06:43.235Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555399019562@c.us"}
+2025-07-21T08:07:18.026Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511987681330@c.us"}
+2025-07-21T08:07:51.342Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557592636699@c.us"}
+2025-07-21T08:08:22.254Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555192412095@c.us"}
+2025-07-21T08:10:44.230Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559180150481@c.us"}
+2025-07-21T08:11:15.907Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5519998109214@c.us"}
+2025-07-21T08:11:49.563Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"555497075538@c.us"}
+2025-07-21T08:12:22.670Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5524999528028@c.us"}
+2025-07-21T08:13:00.775Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556481313601@c.us"}
+2025-07-21T08:13:29.227Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556381155488@c.us"}
+2025-07-21T08:14:02.451Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5514981134431@c.us"}
+2025-07-21T08:14:36.681Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521985854768@c.us"}
+2025-07-21T08:15:12.280Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556184501784@c.us"}
+2025-07-21T08:15:45.923Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554799089661@c.us"}
+2025-07-21T08:18:12.641Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5512991976561@c.us"}
+2025-07-21T08:18:47.576Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556184177859@c.us"}
+2025-07-21T08:19:19.530Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556781361433@c.us"}
+2025-07-21T08:19:54.310Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556192245989@c.us"}
+2025-07-21T08:20:31.822Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554197203830@c.us"}
+2025-07-21T08:21:48.737Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557196580619@c.us"}
+2025-07-21T08:22:21.998Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558191045562@c.us"}
+2025-07-21T08:23:02.254Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554184079394@c.us"}
+2025-07-21T08:23:36.563Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521980289386@c.us"}
+2025-07-21T08:24:11.078Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521964385052@c.us"}
+2025-07-21T08:26:34.234Z [INFO]: 🛑 Recebido sinal uncaughtException. Iniciando shutdown graceful... {}
+2025-07-21T08:26:39.250Z [INFO]: 🛑 WhatsApp cliente finalizado {}
+2025-07-21T08:26:39.254Z [INFO]: ✅ Shutdown concluído com sucesso {}
+2025-07-21T12:41:42.570Z [INFO]: 🤖 IPTV Agent inicializando... {}
+2025-07-21T12:41:42.602Z [INFO]: Sistema Iniciado {"version":"1.0.0","nodeVersion":"v22.17.1","platform":"darwin","timestamp":"2025-07-21T12:41:42.602Z"}
+2025-07-21T12:41:42.774Z [INFO]: 📱 Inicializando conexão WhatsApp... {}
+2025-07-21T12:41:42.775Z [INFO]: 📚 Base de Conhecimento inicializada com 5 perfis de clientes {}
+2025-07-21T12:41:42.776Z [INFO]: 🤖 Response Engine inicializado {}
+2025-07-21T12:41:42.776Z [INFO]: 📱 WhatsApp Handler inicializando... {}
+2025-07-21T12:41:57.620Z [INFO]: 🚀 WhatsApp cliente inicializado com sucesso {}
+2025-07-21T12:41:57.621Z [INFO]: ✅ WhatsApp Handler configurado {}
+2025-07-21T12:41:57.621Z [INFO]: 🏥 Configurando monitoramento de saúde... {}
+2025-07-21T12:41:57.622Z [INFO]: ✅ Monitoramento de saúde ativo {}
+2025-07-21T12:41:57.623Z [INFO]: ✅ IPTV Agent iniciado com sucesso! {}
+2025-07-21T12:42:02.406Z [INFO]: 🔐 WhatsApp autenticado com sucesso {}
+2025-07-21T12:42:06.027Z [INFO]: ✅ WhatsApp conectado com sucesso! {"number":"5513997101469","name":"Hob Tiv","platform":"smbi"}
+2025-07-21T12:42:06.918Z [INFO]: WhatsApp incoming {"from":"554195407598@c.us","to":"bot","message":"Bom dia...vou ganhar uma promoção por ter indicado dois colegas?"}
+2025-07-21T12:42:06.919Z [INFO]: 📨 Mensagem recebida {"from":"554195407598@c.us","contact":"Edel de souza","message":"Bom dia...vou ganhar uma promoção por ter indicado dois colegas?","type":"chat"}
+2025-07-21T12:42:08.272Z [INFO]: WhatsApp incoming {"from":"556481662393@c.us","to":"bot","message":"Tv Samsung"}
+2025-07-21T12:42:08.279Z [INFO]: 📨 Mensagem recebida {"from":"556481662393@c.us","contact":"Neiffy Saêta","message":"Tv Samsung","type":"chat"}
+2025-07-21T12:42:08.934Z [INFO]: 📨 Processando mensagem {"customerId":"554195407598@c.us","messagePreview":"Bom dia...vou ganhar uma promoção por ter indicado","customerData":{"id":"554195407598@c.us","name":"Edel de souza","number":"554195407598","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:08.938Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Bom dia...vou ganhar uma promoção por ter indicado"}
+2025-07-21T12:42:08.945Z [INFO]: ✅ Mensagem processada {"customerId":"554195407598@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"shouldEscalate":false,"processingTime":11}
+2025-07-21T12:42:10.289Z [INFO]: 📨 Processando mensagem {"customerId":"556481662393@c.us","messagePreview":"Tv Samsung","customerData":{"id":"556481662393@c.us","name":"Neiffy Saêta","number":"556481662393","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:10.295Z [INFO]: 🎯 Cliente classificado {"profile":"QUESTIONADOR","confidence":0.4,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":0,"QUESTIONADOR":2,"TECNICO":0},"message":"Tv Samsung"}
+2025-07-21T12:42:10.313Z [INFO]: ✅ Mensagem processada {"customerId":"556481662393@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"shouldEscalate":true,"processingTime":24}
+2025-07-21T12:42:13.352Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553496589595@c.us"}
+2025-07-21T12:42:14.009Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553496589595@c.us"}
+2025-07-21T12:42:14.010Z [INFO]: WhatsApp incoming {"from":"553496589595@c.us","to":"bot","message":"Bom dia"}
+2025-07-21T12:42:14.011Z [INFO]: 📨 Mensagem recebida {"from":"553496589595@c.us","contact":"Desconhecido","message":"Bom dia","type":"chat"}
+2025-07-21T12:42:14.012Z [INFO]: WhatsApp incoming {"from":"553496589595@c.us","to":"bot","message":"Quero indicar alguém"}
+2025-07-21T12:42:14.012Z [INFO]: 📨 Mensagem recebida {"from":"553496589595@c.us","contact":"Desconhecido","message":"Quero indicar alguém","type":"chat"}
+2025-07-21T12:42:14.013Z [INFO]: WhatsApp incoming {"from":"553496589595@c.us","to":"bot","message":"BEGIN:VCARD\nVERSION:3.0\nN:Gui;Joao;;;\nFN:Joao Gui\nitem1.TEL;waid=553474008514:+55 34 7400-8514\nitem1"}
+2025-07-21T12:42:14.014Z [INFO]: 📨 Mensagem recebida {"from":"553496589595@c.us","contact":"Desconhecido","message":"BEGIN:VCARD\nVERSION:3.0\nN:Gui;Joao;;;\nFN:Joao Gui\nitem1.TEL;waid=553474008514:+55 34 7400-8514\nitem1","type":"vcard"}
+2025-07-21T12:42:14.316Z [INFO]: WhatsApp incoming {"from":"558197593260@c.us","to":"bot","message":"Ok"}
+2025-07-21T12:42:14.317Z [INFO]: 📨 Mensagem recebida {"from":"558197593260@c.us","contact":"Djalma Bnb","message":"Ok","type":"chat"}
+2025-07-21T12:42:14.551Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511980315454@c.us"}
+2025-07-21T12:42:14.959Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521988396656@c.us"}
+2025-07-21T12:42:15.161Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557988438649@c.us"}
+2025-07-21T12:42:15.460Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559292461261@c.us"}
+2025-07-21T12:42:15.669Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559391909351@c.us"}
+2025-07-21T12:42:16.030Z [INFO]: 📨 Processando mensagem {"customerId":"553496589595@c.us","messagePreview":"Bom dia","customerData":{"id":"553496589595@c.us","number":"553496589595","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:16.032Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Bom dia"}
+2025-07-21T12:42:16.033Z [INFO]: ✅ Mensagem processada {"customerId":"553496589595@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"shouldEscalate":false,"processingTime":3}
+2025-07-21T12:42:16.034Z [INFO]: 📨 Processando mensagem {"customerId":"553496589595@c.us","messagePreview":"Quero indicar alguém","customerData":{"id":"553496589595@c.us","number":"553496589595","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:16.036Z [INFO]: 🎯 Cliente classificado {"profile":"QUESTIONADOR","confidence":0.4,"scores":{"FIEL":2,"NEGOCIADOR":0,"CAUTELOSO":0,"QUESTIONADOR":2,"TECNICO":0},"message":"Quero indicar alguém"}
+2025-07-21T12:42:16.037Z [INFO]: ✅ Mensagem processada {"customerId":"553496589595@c.us","intent":"INTEREST_CONFIRMED","profile":"QUESTIONADOR","confidence":0.9,"shouldEscalate":false,"processingTime":3}
+2025-07-21T12:42:16.038Z [INFO]: 📨 Processando mensagem {"customerId":"553496589595@c.us","messagePreview":"BEGIN:VCARD\nVERSION:3.0\nN:Gui;Joao;;;\nFN:Joao Gui\n","customerData":{"id":"553496589595@c.us","number":"553496589595","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:16.038Z [INFO]: 🎯 Cliente classificado {"profile":"QUESTIONADOR","confidence":0.4,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":0,"QUESTIONADOR":2,"TECNICO":0},"message":"BEGIN:VCARD\nVERSION:3.0\nN:Gui;Joao;;;\nFN:Joao Gui\n"}
+2025-07-21T12:42:16.040Z [INFO]: ✅ Mensagem processada {"customerId":"553496589595@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:16.123Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511994445204@c.us"}
+2025-07-21T12:42:16.336Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556792549042@c.us"}
+2025-07-21T12:42:16.337Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556792549042@c.us"}
+2025-07-21T12:42:16.341Z [INFO]: 📨 Processando mensagem {"customerId":"558197593260@c.us","messagePreview":"Ok","customerData":{"id":"558197593260@c.us","name":"Djalma Bnb","number":"558197593260","isReturning":false,"isBlocked":false,"isBusiness":true,"hasComplaints":false}}
+2025-07-21T12:42:16.342Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Ok"}
+2025-07-21T12:42:16.344Z [INFO]: ✅ Mensagem processada {"customerId":"558197593260@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":3}
+2025-07-21T12:42:17.109Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556699018769@c.us"}
+2025-07-21T12:42:18.082Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553496589595@c.us","message":"oi amigo tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *Sky"}
+2025-07-21T12:42:18.083Z [INFO]: 📤 Resposta enviada {"to":"553496589595@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"message":"oi amigo tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *Sky"}
+2025-07-21T12:42:18.732Z [INFO]: WhatsApp incoming {"from":"553496589595@c.us","to":"bot","message":"Blz"}
+2025-07-21T12:42:18.733Z [INFO]: 📨 Mensagem recebida {"from":"553496589595@c.us","contact":"Desconhecido","message":"Blz","type":"chat"}
+2025-07-21T12:42:19.824Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553474008514@c.us"}
+2025-07-21T12:42:19.825Z [INFO]: WhatsApp incoming {"from":"553474008514@c.us","to":"bot","message":"Oi Pedro tudo joia e com você?"}
+2025-07-21T12:42:19.825Z [INFO]: 📨 Mensagem recebida {"from":"553474008514@c.us","contact":"Desconhecido","message":"Oi Pedro tudo joia e com você?","type":"chat"}
+2025-07-21T12:42:20.341Z [INFO]: WhatsApp incoming {"from":"553474008514@c.us","to":"bot","message":"Então no momento eu tô no trabalho, eu chego em casa por volta das 17:30"}
+2025-07-21T12:42:20.343Z [INFO]: 📨 Mensagem recebida {"from":"553474008514@c.us","contact":"Desconhecido","message":"Então no momento eu tô no trabalho, eu chego em casa por volta das 17:30","type":"chat"}
+2025-07-21T12:42:20.463Z [INFO]: WhatsApp incoming {"from":"553496589595@c.us","to":"bot","message":"Tá valendo ainda ne?"}
+2025-07-21T12:42:20.463Z [INFO]: 📨 Mensagem recebida {"from":"553496589595@c.us","contact":"Desconhecido","message":"Tá valendo ainda ne?","type":"chat"}
+2025-07-21T12:42:20.741Z [INFO]: 📨 Processando mensagem {"customerId":"553496589595@c.us","messagePreview":"Blz","customerData":{"id":"553496589595@c.us","number":"553496589595","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:20.742Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Blz"}
+2025-07-21T12:42:20.743Z [INFO]: ✅ Mensagem processada {"customerId":"553496589595@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:21.851Z [INFO]: 📨 Processando mensagem {"customerId":"553474008514@c.us","messagePreview":"Oi Pedro tudo joia e com você?","customerData":{"id":"553474008514@c.us","number":"553474008514","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:21.853Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Oi Pedro tudo joia e com você?"}
+2025-07-21T12:42:21.854Z [INFO]: ✅ Mensagem processada {"customerId":"553474008514@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"shouldEscalate":false,"processingTime":3}
+2025-07-21T12:42:22.358Z [INFO]: 📨 Processando mensagem {"customerId":"553474008514@c.us","messagePreview":"Então no momento eu tô no trabalho, eu chego em ca","customerData":{"id":"553474008514@c.us","number":"553474008514","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:22.359Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Então no momento eu tô no trabalho, eu chego em ca"}
+2025-07-21T12:42:22.360Z [INFO]: ✅ Mensagem processada {"customerId":"553474008514@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:22.493Z [INFO]: 📨 Processando mensagem {"customerId":"553496589595@c.us","messagePreview":"Tá valendo ainda ne?","customerData":{"id":"553496589595@c.us","number":"553496589595","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:22.493Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Tá valendo ainda ne?"}
+2025-07-21T12:42:22.494Z [INFO]: ✅ Mensagem processada {"customerId":"553496589595@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":1}
+2025-07-21T12:42:23.524Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553496589595@c.us","message":"Sem problemas amigo. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:23.525Z [INFO]: 📤 Resposta enviada {"to":"553496589595@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas amigo. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:23.854Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"Bom dia"}
+2025-07-21T12:42:23.855Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"Bom dia","type":"chat"}
+2025-07-21T12:42:23.856Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"Vence dia 27"}
+2025-07-21T12:42:23.857Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"Vence dia 27","type":"chat"}
+2025-07-21T12:42:24.081Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553496589595@c.us","message":"Sem problemas amigo. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:24.082Z [INFO]: 📤 Resposta enviada {"to":"553496589595@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas amigo. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:24.505Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"Já paguei o que vence dia 17 o outro edia 27"}
+2025-07-21T12:42:24.507Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"Já paguei o que vence dia 17 o outro edia 27","type":"chat"}
+2025-07-21T12:42:24.577Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"553496589595@c.us","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:24.588Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"553496589595@c.us","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:25.118Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553474008514@c.us","message":"oi amigo tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *Sky"}
+2025-07-21T12:42:25.119Z [INFO]: 📤 Resposta enviada {"to":"553474008514@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"message":"oi amigo tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *Sky"}
+2025-07-21T12:42:25.150Z [INFO]: WhatsApp incoming {"from":"5521991325748@c.us","to":"bot","message":"Bom dia só consigo à noite a hora que eu voltar em frente a TV aí eu entro em contato contigo a a pa"}
+2025-07-21T12:42:25.150Z [INFO]: 📨 Mensagem recebida {"from":"5521991325748@c.us","contact":"Trabalho","message":"Bom dia só consigo à noite a hora que eu voltar em frente a TV aí eu entro em contato contigo a a pa","type":"chat"}
+2025-07-21T12:42:25.876Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"Bom dia","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:25.878Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Bom dia"}
+2025-07-21T12:42:25.879Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"shouldEscalate":false,"processingTime":3}
+2025-07-21T12:42:25.880Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"Vence dia 27","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:25.881Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Vence dia 27"}
+2025-07-21T12:42:25.881Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":1}
+2025-07-21T12:42:26.378Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553187148741@c.us"}
+2025-07-21T12:42:26.534Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"Já paguei o que vence dia 17 o outro edia 27","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:26.535Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Já paguei o que vence dia 17 o outro edia 27"}
+2025-07-21T12:42:26.536Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:26.977Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559492366835@c.us"}
+2025-07-21T12:42:27.150Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"oi Doni tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *Sky,"}
+2025-07-21T12:42:27.151Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"message":"oi Doni tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *Sky,"}
+2025-07-21T12:42:27.161Z [INFO]: 📨 Processando mensagem {"customerId":"5521991325748@c.us","messagePreview":"Bom dia só consigo à noite a hora que eu voltar em","customerData":{"id":"5521991325748@c.us","name":"Trabalho","number":"5521991325748","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:27.163Z [INFO]: 🎯 Cliente classificado {"profile":"QUESTIONADOR","confidence":0.4,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":0,"QUESTIONADOR":2,"TECNICO":0},"message":"Bom dia só consigo à noite a hora que eu voltar em"}
+2025-07-21T12:42:27.164Z [INFO]: ✅ Mensagem processada {"customerId":"5521991325748@c.us","intent":"GREETING","profile":"QUESTIONADOR","confidence":0.8,"shouldEscalate":false,"processingTime":3}
+2025-07-21T12:42:27.204Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554197587500@c.us"}
+2025-07-21T12:42:27.461Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554792124694@c.us"}
+2025-07-21T12:42:27.549Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:27.550Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:28.044Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511966736764@c.us","customerName":"Doni","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:28.145Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"559684331019@c.us"}
+2025-07-21T12:42:28.377Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556292330309@c.us"}
+2025-07-21T12:42:28.607Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557181286914@c.us"}
+2025-07-21T12:42:28.987Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511977783249@c.us"}
+2025-07-21T12:42:29.458Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"557588054324@c.us"}
+2025-07-21T12:42:30.236Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511984193574@c.us"}
+2025-07-21T12:42:30.417Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5519989588704@c.us"}
+2025-07-21T12:42:30.684Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553498099889@c.us"}
+2025-07-21T12:42:30.899Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-21T12:42:30.900Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-21T12:42:30.900Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"status@broadcast"}
+2025-07-21T12:42:31.272Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5515988137799@c.us"}
+2025-07-21T12:42:31.539Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511992522668@c.us"}
+2025-07-21T12:42:32.391Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"558488083548@c.us"}
+2025-07-21T12:42:32.791Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"https://g5x.in"}
+2025-07-21T12:42:32.803Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"https://g5x.in","type":"chat"}
+2025-07-21T12:42:32.803Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"Coloquei este e voltou a funcionar"}
+2025-07-21T12:42:32.803Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"Coloquei este e voltou a funcionar","type":"chat"}
+2025-07-21T12:42:32.961Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553284286178@c.us"}
+2025-07-21T12:42:33.450Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521976742713@c.us"}
+2025-07-21T12:42:33.572Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"Os meus aparelhos é firestick e box"}
+2025-07-21T12:42:33.573Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"Os meus aparelhos é firestick e box","type":"chat"}
+2025-07-21T12:42:33.579Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"Resolvido 👍🏻"}
+2025-07-21T12:42:33.579Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"Resolvido 👍🏻","type":"chat"}
+2025-07-21T12:42:34.821Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"https://g5x.in","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:34.823Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"https://g5x.in"}
+2025-07-21T12:42:34.823Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:34.825Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"Coloquei este e voltou a funcionar","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:34.826Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Coloquei este e voltou a funcionar"}
+2025-07-21T12:42:34.827Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:35.258Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5516997609603@c.us"}
+2025-07-21T12:42:35.648Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"Os meus aparelhos é firestick e box","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:35.649Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Os meus aparelhos é firestick e box"}
+2025-07-21T12:42:35.650Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:35.654Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"Resolvido 👍🏻","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:35.676Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Resolvido 👍🏻"}
+2025-07-21T12:42:35.683Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":29}
+2025-07-21T12:42:36.085Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:36.087Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:36.097Z [INFO]: WhatsApp incoming {"from":"5511966736764@c.us","to":"bot","message":"Esse é o que venceu dia 17"}
+2025-07-21T12:42:36.098Z [INFO]: 📨 Mensagem recebida {"from":"5511966736764@c.us","contact":"Doni","message":"Esse é o que venceu dia 17","type":"chat"}
+2025-07-21T12:42:36.548Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:36.548Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:36.627Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511966736764@c.us","customerName":"Doni","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:36.628Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511966736764@c.us","customerName":"Doni","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:36.670Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:36.671Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:36.698Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:36.698Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:37.154Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511966736764@c.us","customerName":"Doni","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:37.155Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511966736764@c.us","customerName":"Doni","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:38.164Z [INFO]: 📨 Processando mensagem {"customerId":"5511966736764@c.us","messagePreview":"Esse é o que venceu dia 17","customerData":{"id":"5511966736764@c.us","name":"Doni","number":"5511966736764","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:38.166Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Esse é o que venceu dia 17"}
+2025-07-21T12:42:38.166Z [INFO]: ✅ Mensagem processada {"customerId":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"shouldEscalate":true,"processingTime":2}
+2025-07-21T12:42:38.382Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"556599182670@c.us"}
+2025-07-21T12:42:38.751Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5521983175861@c.us"}
+2025-07-21T12:42:39.354Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553898083198@c.us"}
+2025-07-21T12:42:39.377Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553387283304@c.us"}
+2025-07-21T12:42:39.645Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5512992450623@c.us"}
+2025-07-21T12:42:39.714Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511966736764@c.us"}
+2025-07-21T12:42:39.926Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:39.927Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:40.410Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511966736764@c.us","customerName":"Doni","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:40.554Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553198801364@c.us"}
+2025-07-21T12:42:40.933Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5527999085884@c.us"}
+2025-07-21T12:42:41.174Z [INFO]: WhatsApp incoming {"from":"5521991325748@c.us","to":"bot","message":"Samsung"}
+2025-07-21T12:42:41.175Z [INFO]: 📨 Mensagem recebida {"from":"5521991325748@c.us","contact":"Trabalho","message":"Samsung","type":"chat"}
+2025-07-21T12:42:41.599Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5516996207955@c.us"}
+2025-07-21T12:42:41.890Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553299180454@c.us"}
+2025-07-21T12:42:42.075Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5527999741395@c.us"}
+2025-07-21T12:42:42.545Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5519987147909@c.us"}
+2025-07-21T12:42:43.193Z [INFO]: 📨 Processando mensagem {"customerId":"5521991325748@c.us","messagePreview":"Samsung","customerData":{"id":"5521991325748@c.us","name":"Trabalho","number":"5521991325748","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:42:43.196Z [INFO]: 🎯 Cliente classificado {"profile":"QUESTIONADOR","confidence":0.4,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":0,"QUESTIONADOR":2,"TECNICO":0},"message":"Samsung"}
+2025-07-21T12:42:43.197Z [INFO]: ✅ Mensagem processada {"customerId":"5521991325748@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"shouldEscalate":true,"processingTime":4}
+2025-07-21T12:42:43.487Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"554199701691@c.us"}
+2025-07-21T12:42:45.557Z [INFO]: WhatsApp outgoing {"from":"bot","to":"554195407598@c.us","message":"oi Edel de souza tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acess"}
+2025-07-21T12:42:45.561Z [INFO]: 📤 Resposta enviada {"to":"554195407598@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"message":"oi Edel de souza tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acess"}
+2025-07-21T12:42:45.580Z [INFO]: WhatsApp outgoing {"from":"bot","to":"556481662393@c.us","message":"Perfeito Neiffy Saêta! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber."}
+2025-07-21T12:42:45.580Z [INFO]: 📤 Resposta enviada {"to":"556481662393@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"message":"Perfeito Neiffy Saêta! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber."}
+2025-07-21T12:42:45.755Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553496589595@c.us","message":"onde quer instalar, tv ou celular?\n\nse for tv qual a marca?"}
+2025-07-21T12:42:45.755Z [INFO]: 📤 Resposta enviada {"to":"553496589595@c.us","intent":"INTEREST_CONFIRMED","profile":"QUESTIONADOR","confidence":0.9,"message":"onde quer instalar, tv ou celular?\n\nse for tv qual a marca?"}
+2025-07-21T12:42:45.759Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553496589595@c.us","message":"Perfeito amigo! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber."}
+2025-07-21T12:42:45.760Z [INFO]: 📤 Resposta enviada {"to":"553496589595@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"message":"Perfeito amigo! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber."}
+2025-07-21T12:42:46.139Z [INFO]: WhatsApp outgoing {"from":"bot","to":"558197593260@c.us","message":"Sem problemas Djalma Bnb. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:46.140Z [INFO]: 📤 Resposta enviada {"to":"558197593260@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Djalma Bnb. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:46.142Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"556481662393@c.us","customerName":"Neiffy Saêta","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:47.098Z [INFO]: WhatsApp outgoing {"from":"bot","to":"553474008514@c.us","message":"Sem problemas amigo. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:47.100Z [INFO]: 📤 Resposta enviada {"to":"553474008514@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas amigo. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:47.103Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5511966736764@c.us","message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:47.104Z [INFO]: 📤 Resposta enviada {"to":"5511966736764@c.us","intent":"GENERAL_QUESTION","profile":"CAUTELOSO","confidence":0.5,"message":"Sem problemas Doni. Vou te explicar tudo direitinho. O que você gostaria de saber?"}
+2025-07-21T12:42:47.106Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5521991325748@c.us","message":"oi Trabalho tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *"}
+2025-07-21T12:42:47.106Z [INFO]: 📤 Resposta enviada {"to":"5521991325748@c.us","intent":"GREETING","profile":"QUESTIONADOR","confidence":0.8,"message":"oi Trabalho tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acesso a *"}
+2025-07-21T12:42:47.609Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"553496589595@c.us","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:47.628Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"553474008514@c.us","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:47.704Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5511966736764@c.us","customerName":"Doni","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:48.172Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"558197593260@c.us","customerName":"Djalma Bnb","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:48.836Z [INFO]: WhatsApp outgoing {"from":"bot","to":"5521991325748@c.us","message":"Perfeito Trabalho! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber."}
+2025-07-21T12:42:48.837Z [INFO]: 📤 Resposta enviada {"to":"5521991325748@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"message":"Perfeito Trabalho! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber."}
+2025-07-21T12:42:49.334Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"5521991325748@c.us","customerName":"Trabalho","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:42:56.774Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5527995119548@c.us"}
+2025-07-21T12:43:07.576Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"Oi"}
+2025-07-21T12:43:07.578Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"Oi","type":"chat"}
+2025-07-21T12:43:08.477Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5515981284704@c.us"}
+2025-07-21T12:43:09.607Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"Oi","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:43:09.609Z [INFO]: 🎯 Cliente classificado {"profile":"CAUTELOSO","confidence":0.6,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":3,"QUESTIONADOR":0,"TECNICO":0},"message":"Oi"}
+2025-07-21T12:43:09.609Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"shouldEscalate":false,"processingTime":2}
+2025-07-21T12:43:11.180Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"oi Diogo Franca. tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acess"}
+2025-07-21T12:43:11.182Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"GREETING","profile":"CAUTELOSO","confidence":0.8,"message":"oi Diogo Franca. tudo bem? você se interessa por *canais de tv online?*\n\nQuero te ajudar a ter acess"}
+2025-07-21T12:43:11.308Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"5511947664770@c.us"}
+2025-07-21T12:43:28.048Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"Eu quero"}
+2025-07-21T12:43:28.049Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"Eu quero","type":"chat"}
+2025-07-21T12:43:30.150Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"Eu quero","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:43:30.152Z [INFO]: 🎯 Cliente classificado {"profile":"FIEL","confidence":0.4,"scores":{"FIEL":2,"NEGOCIADOR":0,"CAUTELOSO":0,"QUESTIONADOR":0,"TECNICO":0},"message":"Eu quero"}
+2025-07-21T12:43:30.153Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"INTEREST_CONFIRMED","profile":"FIEL","confidence":0.9,"shouldEscalate":false,"processingTime":4}
+2025-07-21T12:43:32.005Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"onde quer instalar, tv ou celular?\n\nse for tv qual a marca?"}
+2025-07-21T12:43:32.008Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"INTEREST_CONFIRMED","profile":"FIEL","confidence":0.9,"message":"onde quer instalar, tv ou celular?\n\nse for tv qual a marca?"}
+2025-07-21T12:43:44.002Z [INFO]: 📨 Mensagem vazia ignorada {"customerId":"553499988769@c.us"}
+2025-07-21T12:43:46.257Z [INFO]: WhatsApp incoming {"from":"48662703645@c.us","to":"bot","message":"Samsung"}
+2025-07-21T12:43:46.258Z [INFO]: 📨 Mensagem recebida {"from":"48662703645@c.us","contact":"Diogo Franca.","message":"Samsung","type":"chat"}
+2025-07-21T12:43:48.304Z [INFO]: 📨 Processando mensagem {"customerId":"48662703645@c.us","messagePreview":"Samsung","customerData":{"id":"48662703645@c.us","name":"Diogo Franca.","number":"48662703645","isReturning":false,"isBlocked":false,"isBusiness":false,"hasComplaints":false}}
+2025-07-21T12:43:48.307Z [INFO]: 🎯 Cliente classificado {"profile":"QUESTIONADOR","confidence":0.4,"scores":{"FIEL":0,"NEGOCIADOR":0,"CAUTELOSO":0,"QUESTIONADOR":2,"TECNICO":0},"message":"Samsung"}
+2025-07-21T12:43:48.307Z [INFO]: ✅ Mensagem processada {"customerId":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"shouldEscalate":true,"processingTime":3}
+2025-07-21T12:43:49.317Z [INFO]: WhatsApp outgoing {"from":"bot","to":"48662703645@c.us","message":"Perfeito Diogo Franca.! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber"}
+2025-07-21T12:43:49.318Z [INFO]: 📤 Resposta enviada {"to":"48662703645@c.us","intent":"GENERAL_QUESTION","profile":"QUESTIONADOR","confidence":0.5,"message":"Perfeito Diogo Franca.! Adoro clientes que fazem boas perguntas. Me fala exatamente o que quer saber"}
+2025-07-21T12:43:49.802Z [INFO]: 🚨 Escalando para atendimento humano {"customerId":"48662703645@c.us","customerName":"Diogo Franca.","reason":"Baixa confiança na resposta","confidence":0.5,"intent":"GENERAL_QUESTION"}
+2025-07-21T12:44:23.199Z [INFO]: 🔐 WhatsApp autenticado com sucesso {}
+2025-07-21T12:44:23.201Z [INFO]: 🔐 WhatsApp autenticado com sucesso {}
+2025-07-21T12:44:27.578Z [INFO]: ✅ WhatsApp conectado com sucesso! {"number":"5513997101469","name":"Hob Tiv","platform":"smbi"}
+2025-07-21T12:44:27.580Z [INFO]: ✅ WhatsApp conectado com sucesso! {"number":"5513997101469","name":"Hob Tiv","platform":"smbi"}
+2025-07-21T12:45:34.164Z [INFO]: 🛑 Recebido sinal unhandledRejection. Iniciando shutdown graceful... {}
+2025-07-21T12:45:39.818Z [INFO]: 🛑 WhatsApp cliente finalizado {}
+2025-07-21T12:45:39.820Z [INFO]: ✅ Shutdown concluído com sucesso {}
+2025-07-21T15:17:18.246Z [INFO]: 🤖 IPTV Agent inicializando... {}
+2025-07-21T15:17:18.280Z [INFO]: Sistema Iniciado {"version":"1.0.0","nodeVersion":"v22.17.1","platform":"darwin","timestamp":"2025-07-21T15:17:18.280Z"}
+2025-07-21T15:17:18.457Z [INFO]: 📱 Inicializando conexão WhatsApp... {}
+2025-07-21T15:17:18.460Z [INFO]: 📚 Base de Conhecimento inicializada com 5 perfis de clientes {}
+2025-07-21T15:17:18.461Z [INFO]: 🤖 Response Engine inicializado {}
+2025-07-21T15:17:18.462Z [INFO]: 📱 WhatsApp Handler inicializando... {}
+2025-07-21T15:17:51.124Z [INFO]: 🛑 Recebido sinal SIGINT. Iniciando shutdown graceful... {}
+2025-07-21T15:44:29.415Z [INFO]: 🔗 Waseller API inicializada {}
+2025-07-21T15:44:29.436Z [INFO]: 🚀 Iniciando extração completa do Waseller... {}
+2025-07-21T15:44:42.151Z [INFO]: ✅ contacts: 0 itens extraídos {}
+2025-07-21T15:44:42.153Z [INFO]: ✅ conversations: 0 itens extraídos {}
+2025-07-21T15:44:42.153Z [INFO]: ✅ quickReplies: 0 itens extraídos {}
+2025-07-21T15:44:42.153Z [INFO]: ✅ funnels: 0 itens extraídos {}
+2025-07-21T15:44:42.154Z [INFO]: ✅ tags: 0 itens extraídos {}
+2025-07-21T15:44:42.154Z [INFO]: ✅ reminders: 0 itens extraídos {}
+2025-07-21T15:44:42.154Z [INFO]: ✅ templates: 0 itens extraídos {}
+2025-07-21T15:44:42.155Z [INFO]: ✅ campaigns: 0 itens extraídos {}
+2025-07-21T15:44:42.156Z [INFO]: ✅ metrics: 0 itens extraídos {}
+2025-07-21T15:44:42.156Z [INFO]: ✅ team: 0 itens extraídos {}
+2025-07-21T15:44:42.156Z [INFO]: ✅ settings: 0 itens extraídos {}
+2025-07-21T15:44:42.157Z [INFO]: ✅ automations: 0 itens extraídos {}
+2025-07-21T15:44:42.168Z [INFO]: 💾 Dados salvos em: /Users/diogomartins/Desktop/Projetos/whatsapp-iptv-agent/data/waseller-export/waseller-export-2025-07-21T15-44-42-162Z.json {}
+2025-07-21T15:44:42.177Z [INFO]: 🎉 Extração completa finalizada! {}

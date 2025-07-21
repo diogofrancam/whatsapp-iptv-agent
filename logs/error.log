@@ -1,0 +1,12 @@
+2025-07-20T14:40:58.102Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T14:41:11.830Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T14:41:17.092Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T14:51:21.603Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T14:52:46.692Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T14:53:43.812Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T14:54:09.213Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T14:59:16.998Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-20T15:00:12.415Z [ERROR]: ❌ Erro ao processar mensagem: {}
+2025-07-21T08:26:34.166Z [ERROR]: ❌ Exceção não tratada: {"errno":-5,"code":"EIO","syscall":"read"}
+2025-07-21T12:45:34.151Z [ERROR]: ❌ Promise rejeitada não tratada: {"reason":{},"promise":{}}
+2025-07-21T15:44:42.170Z [ERROR]: ❌ Erro na análise: {}

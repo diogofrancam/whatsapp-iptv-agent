@@ -1,84 +1,118 @@
-const moment = require('moment');
+// src/utils/logger.js
+const fs = require('fs');
+const path = require('path');
 
-class Logger {
-    static log(level, message, data = {}) {
-        const timestamp = moment().format('YYYY-MM-DD HH:mm:ss');
-        const logData = {
-            timestamp,
-            level: level.toUpperCase(),
-            message,
-            ...data
-        };
+// Função para criar diretórios se não existirem
+const createLogDir = () => {
+  const logDir = path.join(__dirname, '../../logs');
+  if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir, { recursive: true });
+  }
+  return logDir;
+};
 
-        // Console colorido baseado no nível
-        switch (level.toLowerCase()) {
-            case 'error':
-                console.error(`❌ [${timestamp}] ERROR: ${message}`, data);
-                break;
-            case 'warning':
-                console.warn(`⚠️ [${timestamp}] WARNING: ${message}`, data);
-                break;
-            case 'info':
-                console.log(`ℹ️ [${timestamp}] INFO: ${message}`, data);
-                break;
-            case 'success':
-                console.log(`✅ [${timestamp}] SUCCESS: ${message}`, data);
-                break;
-            case 'debug':
-                console.log(`🔍 [${timestamp}] DEBUG: ${message}`, data);
-                break;
-            default:
-                console.log(`📝 [${timestamp}] ${level.toUpperCase()}: ${message}`, data);
-        }
-
-        return logData;
+// Logger simples
+const logger = {
+  info: (message, data = {}) => {
+    const timestamp = new Date().toISOString();
+    const logMessage = `${timestamp} [INFO]: ${message} ${JSON.stringify(data)}`;
+    console.log(logMessage);
+    try {
+      const logDir = createLogDir();
+      fs.appendFileSync(path.join(logDir, 'app.log'), logMessage + '\n');
+    } catch (error) {
+      // Ignorar erros de log
     }
-
-    static error(message, data = {}) {
-        return this.log('error', message, data);
+  },
+  error: (message, error = {}) => {
+    const timestamp = new Date().toISOString();
+    const logMessage = `${timestamp} [ERROR]: ${message} ${JSON.stringify(error)}`;
+    console.error(logMessage);
+    try {
+      const logDir = createLogDir();
+      fs.appendFileSync(path.join(logDir, 'error.log'), logMessage + '\n');
+    } catch (err) {
+      // Ignorar erros de log
     }
+  },
+  warn: (message, data = {}) => {
+    const timestamp = new Date().toISOString();
+    const logMessage = `${timestamp} [WARN]: ${message} ${JSON.stringify(data)}`;
+    console.warn(logMessage);
+  }
+};
 
-    static warning(message, data = {}) {
-        return this.log('warning', message, data);
+// Funções específicas para WhatsApp
+const logWhatsAppMessage = (direction, from, to, message) => {
+  logger.info(`WhatsApp ${direction}`, { from, to, message: message.substring(0, 100) });
+};
+
+// Sistema de monitoramento de saúde
+const healthMonitor = {
+  stats: {
+    messagesReceived: 0,
+    messagesSent: 0,
+    errors: 0,
+    uptime: Date.now(),
+    lastActivity: Date.now()
+  },
+  
+  incrementMessagesReceived() {
+    this.stats.messagesReceived++;
+    this.stats.lastActivity = Date.now();
+  },
+  
+  incrementMessagesSent() {
+    this.stats.messagesSent++;
+    this.stats.lastActivity = Date.now();
+  },
+  
+  incrementErrors() {
+    this.stats.errors++;
+  },
+  
+  getHealthReport() {
+    return {
+      ...this.stats,
+      uptimeHours: ((Date.now() - this.stats.uptime) / (1000 * 60 * 60)).toFixed(2),
+      lastActivityMinutes: ((Date.now() - this.stats.lastActivity) / (1000 * 60)).toFixed(2)
+    };
+  }
+};
+
+// Monitor de performance simples
+const performanceMonitor = {
+  startTime: new Map(),
+  
+  start(operation) {
+    this.startTime.set(operation, Date.now());
+  },
+  
+  end(operation) {
+    const start = this.startTime.get(operation);
+    if (start) {
+      const duration = Date.now() - start;
+      this.startTime.delete(operation);
+      return duration;
     }
+    return 0;
+  }
+};
 
-    static info(message, data = {}) {
-        return this.log('info', message, data);
-    }
+// Log da inicialização do sistema
+const logSystemStart = () => {
+  logger.info('Sistema Iniciado', {
+    version: '1.0.0',
+    nodeVersion: process.version,
+    platform: process.platform,
+    timestamp: new Date().toISOString()
+  });
+};
 
-    static success(message, data = {}) {
-        return this.log('success', message, data);
-    }
-
-    static debug(message, data = {}) {
-        return this.log('debug', message, data);
-    }
-
-    // Log específico para mensagens WhatsApp
-    static messageReceived(phoneNumber, userName, message) {
-        return this.log('info', 'Mensagem recebida', {
-            phone: phoneNumber,
-            user: userName,
-            message: message,
-            type: 'message_received'
-        });
-    }
-
-    static messageSent(phoneNumber, response) {
-        return this.log('success', 'Resposta enviada', {
-            phone: phoneNumber,
-            response: response,
-            type: 'message_sent'
-        });
-    }
-
-    static botEvent(event, data = {}) {
-        return this.log('info', `Bot event: ${event}`, {
-            event,
-            ...data,
-            type: 'bot_event'
-        });
-    }
-}
-
-module.exports = Logger;
+module.exports = {
+  logger,
+  logWhatsAppMessage,
+  healthMonitor,
+  performanceMonitor,
+  logSystemStart
+};
