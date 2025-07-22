@@ -54,5 +54,589 @@
       "automated": true,
       "confidence": 88
     }
+  },
+  {
+    "id": "1753171751010rji82wfd9",
+    "phone": "48662703645@c.us",
+    "message": "",
+    "direction": "received",
+    "timestamp": "2025-07-22T08:09:11.010Z",
+    "processed": false,
+    "type": "e2e_notification",
+    "metadata": {
+      "type": "e2e_notification",
+      "timestamp": "2025-07-22T08:09:10.000Z",
+      "nomeContato": "Cliente"
+    }
+  },
+  {
+    "id": "1753171751057dknzaa2t9",
+    "phone": "48662703645@c.us",
+    "message": "Oi! Me conta: você já é nosso cliente ou está conhecendo agora? Assim posso te ajudar melhor! 👍",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:11.057Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:09:11.000Z"
+    }
+  },
+  {
+    "id": "17531717515089po1wu11y",
+    "phone": "48662703645@c.us",
+    "message": "Oi",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:11.508Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:09:11.000Z"
+    }
+  },
+  {
+    "id": "1753171751698pdmaks1vl",
+    "phone": "48662703645@c.us",
+    "message": "Oi! Me conta: você já é nosso cliente ou está conhecendo agora? Assim posso te ajudar melhor! 👍",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:11.698Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "confidence": 30,
+      "classificacao": "INDEFINIDO"
+    }
+  },
+  {
+    "id": "17531717537337t5ecq95v",
+    "phone": "48662703645@c.us",
+    "message": "Você já é nosso cliente ou está conhecendo agora?",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:13.733Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "followUp": true
+    }
+  },
+  {
+    "id": "1753171772850rl2ghwtg0",
+    "phone": "48662703645@c.us",
+    "message": "Quero conhecer",
+    "direction": "received",
+    "timestamp": "2025-07-22T08:09:32.850Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "timestamp": "2025-07-22T08:09:33.000Z",
+      "nomeContato": "Diogo"
+    }
+  },
+  {
+    "id": "1753171772885wsey97san",
+    "phone": "48662703645@c.us",
+    "message": "Acesso total: *canais fechados + filmes recém-saídos do cinema + esportes ao vivo!* ⚽\n\nPosso liberar um *acesso de teste* para você experimentar agora mesmo!\n\nTemos uma *promoção especial hoje*: de R$69,99 por apenas *R$34,99* - sem mensalidade! 💸\n\nQuer aproveitar? Digite *SIM* que te mando os detalhes!",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:32.885Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:09:32.000Z"
+    }
+  },
+  {
+    "id": "1753171773475y7k76wtd9",
+    "phone": "48662703645@c.us",
+    "message": "Acesso total: *canais fechados + filmes recém-saídos do cinema + esportes ao vivo!* ⚽\n\nPosso liberar um *acesso de teste* para você experimentar agora mesmo!\n\nTemos uma *promoção especial hoje*: de R$69,99 por apenas *R$34,99* - sem mensalidade! 💸\n\nQuer aproveitar? Digite *SIM* que te mando os detalhes!",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:33.475Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "confidence": 50,
+      "classificacao": "COMPRADOR"
+    }
+  },
+  {
+    "id": "17531717754945spv4o895",
+    "phone": "48662703645@c.us",
+    "message": "Em qual dispositivo você gostaria de usar? (TV, celular, Fire Stick)",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:35.494Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:09:35.000Z"
+    }
+  },
+  {
+    "id": "1753171775503k0tyxdgqy",
+    "phone": "48662703645@c.us",
+    "message": "Em qual dispositivo você gostaria de usar? (TV, celular, Fire Stick)",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:09:35.503Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "followUp": true
+    }
+  },
+  {
+    "id": "1753171829351nfzposhcx",
+    "phone": "48662703645@c.us",
+    "message": "Tvbox",
+    "direction": "received",
+    "timestamp": "2025-07-22T08:10:29.351Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "timestamp": "2025-07-22T08:10:29.000Z",
+      "nomeContato": "Diogo"
+    }
+  },
+  {
+    "id": "1753171829467yw7yatyv1",
+    "phone": "48662703645@c.us",
+    "message": "Olá! Sou da equipe HobTV. Em que posso ajudar?\n\n• Apresentar nossos planos\n• Resolver problemas técnicos\n• Tirar dúvidas",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:29.467Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:10:29.000Z"
+    }
+  },
+  {
+    "id": "1753171830107glirlk6gi",
+    "phone": "48662703645@c.us",
+    "message": "Olá! Sou da equipe HobTV. Em que posso ajudar?\n\n• Apresentar nossos planos\n• Resolver problemas técnicos\n• Tirar dúvidas",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:30.107Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "confidence": 30,
+      "classificacao": "INDEFINIDO"
+    }
+  },
+  {
+    "id": "1753171832125gpqmdgzte",
+    "phone": "48662703645@c.us",
+    "message": "Você já é nosso cliente ou está conhecendo agora?",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:32.125Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:10:32.000Z"
+    }
+  },
+  {
+    "id": "1753171832134jx86av0vg",
+    "phone": "48662703645@c.us",
+    "message": "Você já é nosso cliente ou está conhecendo agora?",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:32.134Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "followUp": true
+    }
+  },
+  {
+    "id": "1753171856510yg2bg6hi9",
+    "phone": "48662703645@c.us",
+    "message": "Quero instala na tvbox",
+    "direction": "received",
+    "timestamp": "2025-07-22T08:10:56.510Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "timestamp": "2025-07-22T08:10:56.000Z",
+      "nomeContato": "Diogo"
+    }
+  },
+  {
+    "id": "1753171856547gtrl1or5u",
+    "phone": "48662703645@c.us",
+    "message": "Temos acesso completo à *Sky, Netflix, Prime Video, Globo Play e +65.847 canais* direto na sua TV! 📺\n\nQuer fazer um *teste gratuito por 1 hora* primeiro? 🔥\n\nOferta de hoje: *R$47,00* única vez + taxa de manutenção de apenas R$6,99/mês\n\nQuer aproveitar? Digite *SIM* que te mando os detalhes!",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:56.547Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:10:56.000Z"
+    }
+  },
+  {
+    "id": "17531718570939uvvp9k0m",
+    "phone": "48662703645@c.us",
+    "message": "Temos acesso completo à *Sky, Netflix, Prime Video, Globo Play e +65.847 canais* direto na sua TV! 📺\n\nQuer fazer um *teste gratuito por 1 hora* primeiro? 🔥\n\nOferta de hoje: *R$47,00* única vez + taxa de manutenção de apenas R$6,99/mês\n\nQuer aproveitar? Digite *SIM* que te mando os detalhes!",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:57.093Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "confidence": 50,
+      "classificacao": "COMPRADOR"
+    }
+  },
+  {
+    "id": "1753171859115p0d2dwsin",
+    "phone": "48662703645@c.us",
+    "message": "Em qual dispositivo você gostaria de usar? (TV, celular, Fire Stick)",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:59.115Z",
+    "processed": false,
+    "type": "chat",
+    "metadata": {
+      "type": "chat",
+      "automated": false,
+      "timestamp": "2025-07-22T08:10:59.000Z"
+    }
+  },
+  {
+    "id": "1753171859119f1k8c7to4",
+    "phone": "48662703645@c.us",
+    "message": "Em qual dispositivo você gostaria de usar? (TV, celular, Fire Stick)",
+    "direction": "sent",
+    "timestamp": "2025-07-22T08:10:59.119Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "followUp": true
+    }
+  },
+  {
+    "id": "1753176930636mj9vid85f",
+    "phone": "48662703645@c.us",
+    "message": "Oi",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:35:30.636Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:35:30.596Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "17531769320721ide4683j",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nEm que posso te ajudar hoje?\n\n📺 Ativar/renovar seu IPTV\n🔧 Resolver problema técnico\n❓ Tirar dúvida sobre os planos",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:35:32.072Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:35:32.071Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "1753176978559gq90wcws6",
+    "phone": "48662703645@c.us",
+    "message": "Meus canais não carregam",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:36:18.559Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:36:18.554Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "1753176990326s6rvnyczm",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nVou te ajudar a resolver isso rapidinho!\n\nPrimeiro, você já viu as instruções do *Grupo de Suporte Técnico*?\n\n*Grupo de Suporte técnico*\nhttps://chat.whatsapp.com/KPt32Gfvsi5J8HLTRMvRUU\n\n*É importante que entre no grupo!*\n\nAgora me informa:\n📱 Qual aplicativo está usando?\n📺 Onde instalou? (TV marca, celular, FireStick)\n🔗 Qual URL está usando?",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:36:30.326Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:36:30.324Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "1753177059942dm7tjdfbz",
+    "phone": "48662703645@c.us",
+    "message": "Na Samsung",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:37:39.942Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:37:39.938Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "1753177061428aj6ffkyyy",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nEm que posso te ajudar hoje?\n\n📺 Ativar/renovar seu IPTV\n🔧 Resolver problema técnico\n❓ Tirar dúvida sobre os planos",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:37:41.428Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:37:41.427Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "1753177065089fhnzt60gs",
+    "phone": "48662703645@c.us",
+    "message": "Estava usando o bob player",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:37:45.089Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:37:45.087Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "1753177067019iwxlnzqov",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nEm que posso te ajudar hoje?\n\n📺 Ativar/renovar seu IPTV\n🔧 Resolver problema técnico\n❓ Tirar dúvida sobre os planos",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:37:47.019Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:37:47.018Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "17531770835697c6f4nja2",
+    "phone": "48662703645@c.us",
+    "message": "Tv Samsung",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:38:03.569Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:38:03.568Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "1753177084840oag6mq3tp",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nEm que posso te ajudar hoje?\n\n📺 Ativar/renovar seu IPTV\n🔧 Resolver problema técnico\n❓ Tirar dúvida sobre os planos",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:38:04.840Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:38:04.836Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "1753177115866hwrn216o6",
+    "phone": "48662703645@c.us",
+    "message": "Resolver problema técnico",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:38:35.866Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:38:35.862Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "17531771180905xytr9ewj",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nVou te ajudar a resolver isso rapidinho!\n\nPara te ajudar melhor, preciso saber:\n\n📱 Qual aplicativo está usando?\n📺 Onde instalou? (TV marca, celular, tvbox, FireStick)\n\nCom essas informações consigo resolver rapidinho! 🚀",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:38:38.090Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:38:38.089Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "1753177149791s5fwp6oql",
+    "phone": "48662703645@c.us",
+    "message": "Ibo player",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:39:09.791Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:09.789Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "1753177150764j2mjqo0pc",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nEm que posso te ajudar hoje?\n\n📺 Ativar/renovar seu IPTV\n🔧 Resolver problema técnico\n❓ Tirar dúvida sobre os planos",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:39:10.765Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:10.761Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "1753177158589w2oh5ukm5",
+    "phone": "48662703645@c.us",
+    "message": "Bob player",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:39:18.589Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:18.586Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "1753177159441brwjgx13t",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nEm que posso te ajudar hoje?\n\n📺 Ativar/renovar seu IPTV\n🔧 Resolver problema técnico\n❓ Tirar dúvida sobre os planos",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:39:19.441Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:19.440Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "17531771705383z2xa360u",
+    "phone": "48662703645@c.us",
+    "message": "Resolver problema técnico",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:39:30.538Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:30.536Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "1753177171383fzc215l00",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nVou te ajudar a resolver isso rapidinho!\n\nPara te ajudar melhor, preciso saber:\n\n📱 Qual aplicativo está usando?\n📺 Onde instalou? (TV marca, celular, tvbox, FireStick)\n\nCom essas informações consigo resolver rapidinho! 🚀",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:39:31.383Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:31.382Z",
+      "automated": true,
+      "nome": ""
+    }
+  },
+  {
+    "id": "17531771893874p5vbw0f6",
+    "phone": "48662703645@c.us",
+    "message": "Bob player \nTv Samsung",
+    "direction": "received",
+    "timestamp": "2025-07-22T09:39:49.387Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:49.382Z",
+      "automated": false,
+      "nome": "Diogo"
+    }
+  },
+  {
+    "id": "17531771905124zdmajcnm",
+    "phone": "48662703645@c.us",
+    "message": "Oi Diogo, tudo bem contigo?\n\nSou o *Assistente Gustavo* 👨‍💻\n\nEm que posso te ajudar hoje?\n\n📺 Ativar/renovar seu IPTV\n🔧 Resolver problema técnico\n❓ Tirar dúvida sobre os planos",
+    "direction": "sent",
+    "timestamp": "2025-07-22T09:39:50.512Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "timestamp": "2025-07-22T09:39:50.510Z",
+      "automated": true,
+      "nome": ""
+    }
   }
 ]

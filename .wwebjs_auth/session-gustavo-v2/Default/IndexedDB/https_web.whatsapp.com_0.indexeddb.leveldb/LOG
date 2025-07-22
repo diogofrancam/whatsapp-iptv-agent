@@ -1,0 +1,17 @@
+2025/07/22-19:51:17.976 a903 Reusing MANIFEST /Users/diogomartins/Desktop/Projetos/whatsapp-iptv-agent/.wwebjs_auth/session-gustavo-v2/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/07/22-19:51:17.999 a903 Recovering log #2146
+2025/07/22-19:51:18.060 a903 Reusing old log /Users/diogomartins/Desktop/Projetos/whatsapp-iptv-agent/.wwebjs_auth/session-gustavo-v2/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/002146.log 
+2025/07/22-19:51:18.063 a903 Delete type=2 #2151
+2025/07/22-19:51:18.063 a903 Delete type=2 #2150
+2025/07/22-19:51:18.063 a903 Delete type=2 #2152
+2025/07/22-19:51:18.063 a903 Delete type=2 #2153
+2025/07/22-19:51:18.063 a903 Delete type=2 #2154
+2025/07/22-19:51:18.063 a903 Delete type=2 #2155
+2025/07/22-19:51:27.445 13803 Compacting 1@1 + 8@2 files
+2025/07/22-19:51:27.667 13803 Generated table #2151@1: 88401 keys, 2240244 bytes
+2025/07/22-19:51:28.158 13803 Generated table #2152@1: 95238 keys, 2246606 bytes
+2025/07/22-19:51:28.695 13803 Level-0 table #2155: started
+2025/07/22-19:51:28.736 13803 Level-0 table #2155: 272374 bytes OK
+2025/07/22-19:51:28.787 13803 Delete type=0 #2146
+2025/07/22-19:51:28.822 13803 Generated table #2153@1: 95337 keys, 2248340 bytes
+2025/07/22-19:51:29.141 13803 Generated table #2156@1: 95337 keys, 2247915 bytes

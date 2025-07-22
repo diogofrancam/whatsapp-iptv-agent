@@ -1,42 +1,53 @@
 {
   "name": "whatsapp-iptv-agent",
-  "version": "1.0.0",
-  "description": "Agente de atendimento WhatsApp para IPTV integrado com Waseller CRM",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "🤖 Agente WhatsApp IPTV com IA - Sistema Avançado de Classificação de Leads",
+  "main": "assistente-gustavo-v2.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:crm": "node test-complete-system.js",
-    "start:bot": "node bot-with-crm.js",
-    "crm:stats": "node -e \"const CRM = require(\"./src/crm/internal-crm\"); new CRM().getStats().then(console.log)\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/diogofrancam/whatsapp-iptv-agent.git"
+    "start": "node assistente-gustavo-v2.js",
+    "dev": "nodemon assistente-gustavo-v2.js",
+    "test": "node tests/test-all.js",
+    "test-classifier": "node tests/test-classifier.js",
+    "test-responses": "node tests/test-contextual-responses.js",
+    "test-crm": "node tests/test-crm.js",
+    "setup": "npm install && node scripts/setup-environment.js",
+    "clean": "rm -rf .wwebjs_auth .wwebjs_cache data/crm/*.json",
+    "backup": "node scripts/backup-data.js",
+    "stats": "node scripts/generate-stats.js"
   },
   "keywords": [
     "whatsapp",
-    "bot",
     "iptv",
+    "bot",
+    "agent",
+    "ai",
     "crm",
-    "waseller"
+    "automation",
+    "leads",
+    "classification"
   ],
-  "author": "Diogo França",
-  "license": "ISC",
+  "author": "Diogo Francam",
+  "license": "MIT",
+  "dependencies": {
+    "whatsapp-web.js": "^1.24.0",
+    "qrcode-terminal": "^0.12.0",
+    "node-cron": "^3.0.3",
+    "fs-extra": "^11.2.0",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diogofrancam/whatsapp-iptv-agent.git"
+  },
   "bugs": {
     "url": "https://github.com/diogofrancam/whatsapp-iptv-agent/issues"
   },
-  "homepage": "https://github.com/diogofrancam/whatsapp-iptv-agent#readme",
-  "dependencies": {
-    "axios": "^1.10.0",
-    "dotenv": "^16.6.1",
-    "express": "^4.19.2",
-    "moment": "^2.30.1",
-    "node-cron": "^4.2.1",
-    "qrcode-terminal": "^0.12.0",
-    "sqlite3": "^5.1.7",
-    "whatsapp-web.js": "^1.26.0",
-    "winston": "^3.17.0"
-  }
+  "homepage": "https://github.com/diogofrancam/whatsapp-iptv-agent#readme"
 }

@@ -60,5 +60,21 @@
     "updatedAt": "2025-07-22T07:53:38.691Z",
     "lastContact": "2025-07-22T07:53:38.691Z",
     "notes": ""
+  },
+  {
+    "id": "17531717510189bb3ngbid",
+    "name": "Cliente",
+    "phone": "48662703645@c.us",
+    "email": "",
+    "source": "WhatsApp",
+    "status": "new",
+    "tags": [
+      "Lead Quente",
+      "Cliente Ativo"
+    ],
+    "createdAt": "2025-07-22T08:09:11.018Z",
+    "updatedAt": "2025-07-22T09:39:50.515Z",
+    "lastContact": "2025-07-22T09:39:50.514Z",
+    "notes": ""
   }
 ]
