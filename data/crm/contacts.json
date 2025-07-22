@@ -8,8 +8,57 @@
     "status": "new",
     "tags": [],
     "createdAt": "2025-07-21T17:14:45.776Z",
-    "updatedAt": "2025-07-21T17:14:45.790Z",
-    "lastContact": "2025-07-21T17:14:45.790Z",
+    "updatedAt": "2025-07-22T07:53:38.702Z",
+    "lastContact": "2025-07-22T07:53:38.701Z",
+    "notes": ""
+  },
+  {
+    "id": "1753170818665305o7cgma",
+    "name": "João Comprador",
+    "phone": "5511999999999",
+    "email": "",
+    "source": "WhatsApp",
+    "status": "lead",
+    "tags": [
+      "Lead Quente",
+      "Dispositivo: fire stick"
+    ],
+    "createdAt": "2025-07-22T07:53:38.667Z",
+    "updatedAt": "2025-07-22T07:53:38.684Z",
+    "lastContact": "2025-07-22T07:53:38.684Z",
+    "notes": ""
+  },
+  {
+    "id": "1753170818688j0jx93a6w",
+    "name": "Maria Cliente",
+    "phone": "5511888888888",
+    "email": "",
+    "source": "WhatsApp",
+    "status": "client",
+    "tags": [
+      "Cliente Ativo",
+      "Suporte Técnico",
+      "App: 9xtream"
+    ],
+    "createdAt": "2025-07-22T07:53:38.688Z",
+    "updatedAt": "2025-07-22T07:53:38.714Z",
+    "lastContact": "2025-07-22T07:53:38.713Z",
+    "notes": ""
+  },
+  {
+    "id": "1753170818691avir9s94f",
+    "name": "Carlos Empresa",
+    "phone": "5511777777777",
+    "email": "",
+    "source": "Indicação",
+    "status": "lead",
+    "tags": [
+      "Lead Quente",
+      "Dispositivo: tv android"
+    ],
+    "createdAt": "2025-07-22T07:53:38.691Z",
+    "updatedAt": "2025-07-22T07:53:38.691Z",
+    "lastContact": "2025-07-22T07:53:38.691Z",
     "notes": ""
   }
 ]

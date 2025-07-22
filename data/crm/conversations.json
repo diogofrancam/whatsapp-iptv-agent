@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1753170818695nsawrd1jv",
+    "phone": "5511999999999",
+    "message": "Eu quero testar o IPTV",
+    "direction": "received",
+    "timestamp": "2025-07-22T07:53:38.695Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": false,
+      "confidence": 80
+    }
+  },
+  {
+    "id": "1753170818700xcqw68ols",
+    "phone": "5511999999999",
+    "message": "Que bom! Vou te ajudar com o teste gratuito",
+    "direction": "sent",
+    "timestamp": "2025-07-22T07:53:38.700Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "confidence": 85
+    }
+  },
+  {
+    "id": "1753170818703turzcfch2",
+    "phone": "5511888888888",
+    "message": "9xtream não funciona no fire stick",
+    "direction": "received",
+    "timestamp": "2025-07-22T07:53:38.703Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": false,
+      "confidence": 90
+    }
+  },
+  {
+    "id": "1753170818712skt8u0c8b",
+    "phone": "5511888888888",
+    "message": "Vou te ajudar com esse problema técnico",
+    "direction": "sent",
+    "timestamp": "2025-07-22T07:53:38.712Z",
+    "processed": false,
+    "type": "text",
+    "metadata": {
+      "type": "text",
+      "automated": true,
+      "confidence": 88
+    }
+  }
+]
