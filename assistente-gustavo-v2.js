@@ -23,7 +23,7 @@ class AssistenteGustavo {
     this.ultimasOfertas = new Map();
     
     // Padrões para identificar origem dos leads
-    this.padroesCampanhaExterna = [
+    'últimas vagas', 'quantas vagas', 'restam', 'responder', 'mensagem automática'
       'vi seu anúncio', 'vem do facebook', 'vem do instagram', 'vi no face',
       'achei no google', 'vi a propaganda', 'anúncio', 'facebook', 'instagram',
       'primeira vez', 'não conheço', 'como chegou até vocês', 'vocês fazem',
